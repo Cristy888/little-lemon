@@ -1,40 +1,44 @@
-body {
-  margin: 0;
+h1, h2, h3, h4, h5, h6 {
   font-family: Arial, sans-serif;
+  color: #495E57;
+  margin: 0.5rem 0;
 }
 
-.app-layout {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  min-height: 100vh;
+p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
 }
 
-header {
-  background-color: #f4ce14;
-  padding: 1rem;
+span {
+  color: #F4CE14;
+  font-weight: bold;
 }
-
 nav {
-  background-color: #495e57;
-  color: white;
+  background-color: #495E57;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 1rem;
+  list-style: none;
   margin: 0;
   padding: 1rem;
+  gap: 1.5rem;
 }
 
-main {
-  padding: 1rem;
-  background-color: #edefee;
-}
-
-footer {
-  background-color: #495e57;
+nav li a {
   color: white;
-  text-align: center;
-  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* sau 0 dacă designul e pătrat */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
