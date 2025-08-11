@@ -1,9 +1,14 @@
-function Main() {
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import BookingPage from "./pages/BookingPage";
+
+export default function Main() {
   return (
     <main>
-      <h2>Conținut principal</h2>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
     </main>
   );
 }
-
-export default Main; // ✅ export default
